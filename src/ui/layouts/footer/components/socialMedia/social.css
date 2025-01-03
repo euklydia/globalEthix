@@ -1,0 +1,9 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.social-icons svg {
+  fill: #fff;
+}
+
+.social-icons li:hover svg {
+  fill: #00b5f5;
+}

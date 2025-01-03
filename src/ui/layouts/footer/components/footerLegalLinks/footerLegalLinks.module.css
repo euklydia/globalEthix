@@ -1,0 +1,17 @@
+.footer-legal-link:first-child {
+  padding-left: 0;
+}
+
+.footer-legal-link::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 0.75rem;
+  background-color: var(--text-secondary-inverse-fixed);
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+
+.footer-legal-link:last-child::after {
+  display: none;
+}

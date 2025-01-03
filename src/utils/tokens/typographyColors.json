@@ -1,0 +1,22 @@
+{
+  "primary": "text-text-primary",
+  "secondary": "text-text-secondary",
+  "tertiary": "text-text-tertiary",
+  "primary-inverse": "text-text-primary-inverse",
+  "secondary-inverse": "text-text-secondary-inverse",
+  "tertiary-inverse": "text-text-tertiary-inverse",
+  "disabled": "text-text-disabled",
+  "warning": "text-text-warning",
+  "error": "text-text-error",
+  "success": "text-text-success",
+  "promotion": "text-text-promotion",
+  "sephora-collection": "text-text-sephora-collection",
+  "decorative-green": "text-decorative-green",
+  "decorative-blue": "text-decorative-blue",
+  "decorative-red": "text-decorative-red",
+  "brand": "text-text-brand",
+  "primary-fixed": "text-text-primary-fixed",
+  "primary-inverse-fixed": "text-text-primary-inverse-fixed",
+  "secondary-inverse-fixed": "text-text-secondary-inverse-fixed",
+  "tertiary-inverse-fixed": "text-text-tertiary-inverse-fixed"
+}
