@@ -1,14 +1,10 @@
-import { Clickable, Icon, TextCaption } from "../../components";
+import { Icon } from "../../components";
 import { useLanguage } from "../../../libs";
 import { MainNavbar } from "./components";
 import { MainNavbarMobile, LangueSwitcher } from "./components";
 
 export const Header = () => {
   const { content } = useLanguage();
-
-  const switcher = () => {
-    console.log("");
-  };
 
   return (
     <header className="relative w-full">

@@ -7,7 +7,6 @@ import {
   PropsWithAriaLabel,
   PropsWithStyle,
   PropsWithId,
-  PropsWithDataLayer,
   PropsWithHref,
 } from "../../../common";
 
@@ -16,8 +15,7 @@ export type LinkProps = PropsWithStyle &
   PropsWithId &
   PropsWithChildren &
   PropsWithClassName &
-  PropsWithHref &
-  PropsWithDataLayer;
+  PropsWithHref;
 
 /**
  * A component that renders an anchor or span if the link is obfuscated.
@@ -28,10 +26,8 @@ export type LinkProps = PropsWithStyle &
  * @param href - The href for the anchor.
  * @param id - The id for the anchor or span.
  * @param isObfuscated - Whether the link should be obfuscated.
- * @param dataLayerId - The data-layer-id for the anchor.
- * @param dataLayerSubId - The data-layer-sub-id for the anchor.
- * @param dataLayerLabel - The data-layer-label for the anchor.
  */
+
 export const Link: Component<LinkProps> = ({
   style,
   ariaLabel,
@@ -40,9 +36,6 @@ export const Link: Component<LinkProps> = ({
   href,
   id,
   isObfuscated,
-  dataLayerId,
-  dataLayerSubId,
-  dataLayerLabel,
   disabled,
 }) => {
   const [obfuscatedHref, setObfuscatedHref] = useState<string>();
@@ -62,9 +55,6 @@ export const Link: Component<LinkProps> = ({
       )}
       style={style}
       aria-label={ariaLabel}
-      data-layer-id={dataLayerId}
-      data-layer-sub-id={dataLayerSubId}
-      data-layer-label={dataLayerLabel}
     >
       {children}
     </span>
@@ -78,9 +68,6 @@ export const Link: Component<LinkProps> = ({
       aria-label={ariaLabel}
       id={id}
       style={style}
-      data-layer-id={dataLayerId}
-      data-layer-sub-id={dataLayerSubId}
-      data-layer-label={dataLayerLabel}
     >
       {children}
     </LinkDirection>

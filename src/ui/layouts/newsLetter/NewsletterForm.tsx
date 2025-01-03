@@ -2,6 +2,7 @@ import { FormEvent, useCallback, useEffect, useState } from "react";
 import clsx from "clsx";
 import { Button, Input, TextBody, TextCaption } from "../../components";
 import { Component, PropsWithClassName } from "../../../common";
+import { StringHelpers } from "../../../libs";
 
 const EMAIL_FORM_ID = "emailFormId";
 const EMAIL_MAX_LENGTH = 70;
@@ -15,8 +16,6 @@ type NewsletterFormProps = PropsWithClassName & {
 export const NewsletterForm: Component<NewsletterFormProps> = ({
   className,
   defaultEmail = "",
-  onSubscribe,
-  onUserSubmit,
 }) => {
   const [errorMessage, setErrorMessage] = useState<string | undefined>();
   const [email, setEmail] = useState(defaultEmail);
@@ -28,25 +27,13 @@ export const NewsletterForm: Component<NewsletterFormProps> = ({
   const onSubmit = useCallback(
     (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      // if (email === "") {
-      //   setErrorMessage(t("label.errorEmpty"));
-      // } else if (StringHelpers.validateEmail(email)) {
-      //   setErrorMessage(undefined);
-      //   trackEventClick(DataLayerEventLabel.Init);
-      //   addAndOpen(NEWSLETTER_MODAL_ID, {
-      //     content: (
-      //       <NewsletterModal
-      //         locale={locale}
-      //         email={email}
-      //         onSubscribe={triggerSubscribe}
-      //         onUserSubmit={onUserSubmit}
-      //       />
-      //     ),
-      //     isOpen: false,
-      //   });
-      // } else {
-      //   setErrorMessage(t("label.errorInvalid"));
-      // }
+      if (email === "") {
+        setErrorMessage("errorEmpty");
+      } else if (StringHelpers.validateEmail(email)) {
+        setErrorMessage(undefined);
+      } else {
+        setErrorMessage("errorInvalid");
+      }
     },
     [email]
   );

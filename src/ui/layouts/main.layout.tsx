@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Footer } from "./footer";
 import { Header } from "./header";
 import { NewsLetter } from "./newsLetter/NewsLetter";

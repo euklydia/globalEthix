@@ -2,13 +2,7 @@ import { useState } from "react";
 import { useFormik } from "formik";
 import { expertiseFormValidationSchema } from "./expertise.schema";
 import "./expertise-form.style.css";
-import {
-  TextBody,
-  TextCaption,
-  Title,
-  PrimaryButton,
-  Button,
-} from "../../components";
+import { TextBody, TextCaption, Title } from "../../components";
 
 export const Apropos = () => {
   const [notification, setNotification] = useState<string | null>(null);

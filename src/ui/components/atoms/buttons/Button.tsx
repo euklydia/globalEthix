@@ -30,7 +30,6 @@ type ButtonProps = PropsWithClassName &
  * @param props - Action to be performed when the button is clicked (href, onClick, ...)
  */
 export const Button: Component<ButtonProps> = ({
-  Icon,
   label,
   size = "large",
   variant = "primary",
@@ -53,7 +52,6 @@ export const Button: Component<ButtonProps> = ({
             fontFamily={fontFamily}
           />
         ),
-        icon: Icon && <Icon Icon={Icon} type={"medium"} />,
       }}
       {...props}
     />

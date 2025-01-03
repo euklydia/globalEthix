@@ -1,4 +1,3 @@
-import React from "react";
 import { frContent } from "./fr";
 
 export type navBarLink = {

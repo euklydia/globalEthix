@@ -12,4 +12,5 @@ export default defineConfig({
       scss: { additionalData: `@import "./src/utils/styles/index.scss";` },
     },
   },
+  base: "/globalEthix"
 });

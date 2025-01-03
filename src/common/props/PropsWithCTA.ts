@@ -1,5 +1,4 @@
 import { KeyboardEvent, MouseEvent } from 'react';
-import { PropsWithDataLayer } from './PropsWithDataLayer';
 
 export type PropsWithOnClick = {
     onClick: (event: MouseEvent) => void;
@@ -21,7 +20,7 @@ export type PropsWithFormSubmit = {
     formId: string;
 };
 
-export type PropsWithCTA = PropsWithDataLayer & (PropsWithOnClick | PropsWithHref | PropsWithFormSubmit);
+export type PropsWithCTA =  PropsWithOnClick | PropsWithHref | PropsWithFormSubmit;
 
 export const isPropsWithHref = (props: PropsWithCTA): props is PropsWithHref => {
     return (

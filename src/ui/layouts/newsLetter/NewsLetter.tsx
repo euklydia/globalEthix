@@ -1,19 +1,21 @@
 import clsx from "clsx";
-import { useCallback, useState } from "react";
+import { useCallback } from "react";
 import { TextBody, Title } from "../../components";
 import { NewsletterForm } from "./NewsletterForm";
 
 export const NewsLetter = () => {
-  const [isSubscribed, setIsSubscribed] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  // const [isSubscribed, setIsSubscribed] = useState(false);
+  // const [isSubmitted, setIsSubmitted] = useState(false);
 
   const onSubscribe = useCallback(() => {
-    setIsSubmitted(false);
-    setIsSubscribed(true);
-  }, [setIsSubscribed]);
+    // setIsSubmitted(false);
+    // setIsSubscribed(true);
+    console.log("onSubscribe");
+  }, []);
 
   const onUserSubmit = (status: boolean) => {
-    setIsSubmitted(status);
+    // setIsSubmitted(status);
+    console.log("onUserSubmit", status);
   };
 
   return (

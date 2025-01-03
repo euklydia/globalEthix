@@ -1,4 +1,4 @@
-import React, { isValidElement } from "react";
+import { isValidElement } from "react";
 import clsx from "clsx";
 import { Component } from "../../../common";
 import { StringHelpers } from "../../../libs";

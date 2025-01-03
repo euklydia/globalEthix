@@ -9,6 +9,7 @@ import {
   PropsWithSuppressHydrationWarning,
 } from "../../../common";
 import { CTA, CTAContent, RightIconShell } from "../molecules";
+import IconName from "../../../assets/svg";
 
 type ClickableWithRightIconProps = PropsWithAriaLabel &
   PropsWithClassName &
@@ -16,7 +17,7 @@ type ClickableWithRightIconProps = PropsWithAriaLabel &
   PropsWithSuppressHydrationWarning &
   PropsWithCTA & {
     content: PropsWithCTAContent;
-    rightIcon: string;
+    rightIcon: keyof typeof IconName;
     iconClassName?: string;
   };
 

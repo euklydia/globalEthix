@@ -52,7 +52,6 @@ export const MainBanner = () => {
                   src={`/images/${hero.img}`} // Local image path in the public folder
                   alt="Example Image"
                   style={{ width: "100%", height: "100%" }}
-                  layout={"responsive"}
                   width={1}
                   height={1}
                   className="!h-full aspect-1/1"

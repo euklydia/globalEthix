@@ -28,9 +28,6 @@ type CTAProps = PropsWithAriaLabel &
  * @param style - Additional styles for the button or anchor
  * @param suppressHydrationWarning - If true, suppress the hydration warning
  * @param children - Content of the button or anchor
- * @param dataLayerId - Data layer id for the button or anchor
- * @param dataLayerSubId - Data layer sub-id for the button or anchor
- * @param dataLayerLabel - Data layer label for the button or anchor
  * @param props - Contains the following:
  * @param props.onMouseEnter - Function to be called when the mouse enters the button
  * @param props.onMouseLeave - Function to be called when the mouse leaves the button
@@ -46,9 +43,6 @@ export const CTA: Component<CTAProps> = ({
   style,
   suppressHydrationWarning = false,
   children,
-  dataLayerId,
-  dataLayerSubId,
-  dataLayerLabel,
   ...props
 }) => {
   if (isPropsWithHref(props)) {
@@ -60,9 +54,6 @@ export const CTA: Component<CTAProps> = ({
         style={style}
         href={props.href}
         isObfuscated={props.isObfuscated}
-        dataLayerId={dataLayerId}
-        dataLayerSubId={dataLayerSubId}
-        dataLayerLabel={dataLayerLabel}
         disabled={props.disabled}
       >
         {children}
@@ -80,9 +71,6 @@ export const CTA: Component<CTAProps> = ({
         suppressHydrationWarning={suppressHydrationWarning}
         type={"submit"}
         form={props.formId}
-        data-layer-id={dataLayerId}
-        data-layer-sub-id={dataLayerSubId}
-        data-layer-label={dataLayerLabel}
       >
         {children}
       </button>
@@ -102,9 +90,6 @@ export const CTA: Component<CTAProps> = ({
       onKeyDown={props.onKeyDown}
       type={"button"}
       disabled={props.disabled}
-      data-layer-id={dataLayerId}
-      data-layer-sub-id={dataLayerSubId}
-      data-layer-label={dataLayerLabel}
     >
       {children}
     </button>
