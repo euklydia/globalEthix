@@ -42,7 +42,7 @@ export const Contact = () => {
     <>
       <div className="relative flex justify-center items-center">
         <img
-          src={`/images/07.jpg`}
+          src={`/globalEthix/public/images/07.jpg`}
           alt="Example Image"
           style={{ width: "100%", height: "50vh" }}
           width={1}
@@ -63,26 +63,6 @@ export const Contact = () => {
             <p>{notification}</p>
           </div>
         )}
-        <Title text={"Où vous conduira votre expertise avec GlobalEthix ?"} />
-        <TextBody
-          text={`GlobalEthix est constitué d’un réseau de bureaux établis dans un pays ou
-        une région d’un pays. Chaque bureau est une entreprise indépendante.
-        Elle offre, sur son territoire, les services de GlobalEthix, en tout ou
-        en partie, en respect des standards établis et du Code d’éthique de
-        l’organisation, et se soumet au processus d’audit qualité établi par
-        GEI. Chaque bureau paie une redevance servant à soutenir le réseau
-        international.`}
-        />
-
-        <TextBody
-          text={`Chaque bureau désigne un associé pour le représenter au sein du comité
-        directeur de Global Ethix International. Il réunit l’expertise locale et
-        établit une stratégie de développement des affaires. Par son adhésion au
-        réseau, le bureau peut participer à des offres de service
-        internationales ou dans des marchés étrangers ainsi qu’avec d’autres
-        bureaux. Les experts-conseil des bureaux peuvent participer au pool
-        d’experts internationaux proposés à l’échelle globale.`}
-        />
 
         <TextBody
           text={`Une participation à ce grand mouvement vous intéresse ? Faites-nous

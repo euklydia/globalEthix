@@ -7,7 +7,7 @@ const comprehensiveApproachData = {
     link: "#",
     label: "Explorez",
   },
-  img: "/public/images/05.jpg",
+  img: "/globalEthix/public/images/05.jpg",
   description:
     "Le recours à des ressources humaines, expérimentées et qualifiées, externalisées en Afrique du Nord, permet d’offrir ces prestations à haut niveau à un coût très compétitif. Notre partenariat stratégique avec Léger, leader nord-américain de la recherche marketing, nous donne les moyens de proposer des solutions innovantes en termes de pilotage de la gouvernance et de l’expérience client.",
 };

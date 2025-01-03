@@ -42,7 +42,7 @@ export const Apropos = () => {
     <>
       <div className="relative flex justify-center items-center">
         <img
-          src={`/images/07.jpg`}
+          src={`/globalEthix/public/images/07.jpg`}
           alt="Example Image"
           style={{ width: "100%", height: "50vh" }}
           width={1}
@@ -50,7 +50,7 @@ export const Apropos = () => {
           className="relative"
         />
         <Title
-          text="A propos de nous"
+          text="Participez au mouvement"
           className="absolute"
           fontFamily={"arial"}
           fontSize="title1"

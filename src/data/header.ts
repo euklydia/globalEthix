@@ -2,7 +2,7 @@ export const navLinks ={
   menus: [
     {
       id: "link-0",
-      title: "La page Participez au mouvement",
+      title: "Participez au mouvement",
       link: "./a-propos",
     },
     {

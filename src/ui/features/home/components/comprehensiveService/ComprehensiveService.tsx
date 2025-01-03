@@ -9,7 +9,7 @@ export const ComprehensiveService = () => {
     <section className="flex flex-col desktopS:flex-row gap-1.5 px-1 desktopS:px-2 pb-2 desktopS:pb-4 items-center justify-center min-h-[450px] max-w-[1200px] m-auto">
       <div className="flex flex-col gap-1">
         <img
-          src={"./images/06.jpg"}
+          src={"/globalEthix/public/images/06.jpg"}
           alt="Placeholder"
           className="w-full h-full object-cover aspect-1"
         />
